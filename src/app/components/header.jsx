@@ -1,12 +1,13 @@
 "use client";
 import React from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Logo from "public/thirteen.svg";
 import Image from "next/image";
 import Link from "next/link";
 
 const Header = () => {
 	const url = usePathname();
+	const router = useRouter();
 
 	return (
 		<>
@@ -28,14 +29,14 @@ const Header = () => {
 								url === "/about" ? "text-purple-500" : ""
 							}`}
 						>
-							<Link href="/about">About</Link>
+							<Link href="../about">About</Link>
 						</li>
 						<li
 							className={`mx-2  uppercase hover:text-purple-500 ${
 								url === "/contact" ? "text-purple-500" : ""
 							}`}
 						>
-							<Link href="/contact">Contact</Link>
+							<Link href="../contact">Contact</Link>
 						</li>
 					</ul>
 				</nav>
