@@ -13,7 +13,11 @@ const Header = () => {
 		<>
 			<div className="flex justify-between h-12 bg-gray-800 shadow-lg">
 				<div className="flex items-center mx-2">
-					<Image style={{ filter: "invert(1)" }} src={Logo} />
+					<Image
+						style={{ filter: "invert(1)" }}
+						src={Logo}
+						alt="logo 13"
+					/>
 				</div>
 				<nav className="flex items-center">
 					<ul className="flex items-center mx-2">
