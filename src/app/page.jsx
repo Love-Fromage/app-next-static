@@ -9,6 +9,10 @@ export default function Home() {
 	return (
 		<>
 			<main className={styles.main}>
+				<h3 className="text-3xl text-center uppercase ">
+					To the surprise of no one, this is the front page
+				</h3>
+
 				<div className={styles.description}>
 					<p>
 						Get started by editing&nbsp;
